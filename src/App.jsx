@@ -1,4 +1,4 @@
-import React ,{useState} from "react";
+import React ,{useEffect, useState} from "react";
 
 export default function App() {
     const [selectImage,setSelectImage] = useState({
@@ -16,6 +16,12 @@ export default function App() {
     const ImageClick = (image) =>{
         setSelectImage(image);
     }
+
+    const [showForm,setShowForm] = useState(true)
+
+    useEffect(()=>{
+        setShowForm(false)
+    },[])
 
     return (
         <>
