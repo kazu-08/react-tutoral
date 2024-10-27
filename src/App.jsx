@@ -17,11 +17,12 @@ export default function App() {
         setSelectImage(image);
     }
 
-    const [showForm,setShowForm] = useState(true)
+    const [showForm, setShowForm] = useState(true)
 
-    useEffect(()=>{
-        setShowForm(false)
-    },[])
+useEffect(() => {
+    setShowForm(false)
+}, [])
+
 
     return (
         <>
